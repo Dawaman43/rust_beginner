@@ -27,10 +27,3 @@ Structure
 - `src/bin/` — contains small example binaries, one concept per file.
 - `Cargo.toml` — project configuration.
 
-If you'd like, I can:
-
-- Replace or remove the legacy `src/bin/readme.md` and keep a single `README.md` in `src/bin/`.
-- Commit these changes and open a PR.
-- Add short exercises and answers for each example.
-
-Tell me which next step you'd like.
