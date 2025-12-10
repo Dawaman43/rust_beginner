@@ -1,19 +1,25 @@
-// we can use conditionals in rust to compute expressions based on conditions
+// Conditionals example
+//
+// Learning goals for beginners:
+// - Understand `if` / `else if` / `else` branching
+// - See how conditions control program flow
+// - Learn that `if` can be used as an expression when assigning values
 
-fn main(){
-    let x = 3;
+fn main() {
+    // Example 1: branching with `if` / `else if` / `else`
+    let age = 3;
 
-    if x > 18 {
-        println!("You are an adult")
-        
-    } else if x == 18 {
-        println!("You are 18 years old")
+    if age > 18 {
+        println!("You are an adult");
+    } else if age == 18 {
+        println!("You are 18 years old");
     } else {
-        println!("You are less than 18 years old")
+        println!("You are less than 18 years old");
     }
 
-    // we can use condtionals in the let assigning too
-    let y = true;
-    let z = if y {6} else {1};
-    println!("The value of y is {z}")
+    // Example 2: using `if` as an expression
+    // `if` can return a value; both branches must return the same type.
+    let condition = true;
+    let number = if condition { 6 } else { 1 };
+    println!("The value chosen by the condition is: {number}");
 }

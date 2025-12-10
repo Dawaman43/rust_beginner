@@ -1,9 +1,16 @@
-// array in rust use to store same types in fixed length 
+// Arrays in Rust
+//
+// Learning goals:
+// - Understand that arrays hold values of the same type and fixed length
+// - Learn how to index into an array
 
-fn main(){
-    let ar = [1,2,3,4];
-    // to print element values from array we will use [element index] or indexing
+fn main() {
+    // A fixed-size array of four `i32` values
+    let arr = [1, 2, 3, 4];
 
-    println!("The first element in the array is {}", ar[0]);
-    // and we can computation using indexing
+    // Access elements by index (starting at 0). Indexing will panic at runtime if out of bounds.
+    println!("The first element in the array is {}", arr[0]);
+
+    // You can also get the length of the array
+    println!("The array has {} elements", arr.len());
 }
