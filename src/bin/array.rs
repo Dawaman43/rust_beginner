@@ -1,5 +1,6 @@
 // Arrays in Rust
 //
+//
 // Learning goals:
 // - Understand that arrays hold values of the same type and fixed length
 // - Learn how to index into an array
